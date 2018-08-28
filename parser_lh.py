@@ -5,9 +5,8 @@ import random
 
 class Parser:
 
-    def __init__(self, url, timeout):
+    def __init__(self, url):
         self.url = url
-        self.timeout = timeout
 
     def get_tree(self):
         # метод для парсинга страницы
@@ -21,7 +20,7 @@ class Parser:
 
 
 url = 'http://news.bigmir.net/'
-parser = Parser(url, 5)
+parser = Parser(url)
 html = parser.get_tree()
 path = '//*[@id="last-news-feed"]/div/div/ul/li/div/a/@href'
 link_list = html.xpath(path)
