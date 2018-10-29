@@ -1,7 +1,7 @@
 import telebot
 import parser_lh
 
-bot = telebot.TeleBot("600440809:AAHvW9lbFtn_E5wpp_NU6f0GpqmqT_iaNfA")
+bot = telebot.TeleBot("***************************************")
 
 
 @bot.message_handler(commands=['start'])
